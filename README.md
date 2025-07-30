@@ -12,6 +12,25 @@ A modern web app to convert dates between the Ethiopian and Gregorian calendars.
 ## Tags
 `ethiopian-calendar` `date-converter` `calendar` `gregorian-calendar` `amharic` `nextjs` `react` `typescript` `tailwindcss` `open-source`
 
+## Vercel Deployment: Legacy Peer Deps
+If you get npm peer dependency errors on Vercel, add this to your `vercel.json`:
+
+```json
+{
+  "build": {
+    "env": {
+      "NPM_FLAGS": "--legacy-peer-deps"
+    }
+  }
+}
+```
+
+Or set the build command to:
+
+```
+npm install --legacy-peer-deps && npm run build
+```
+
 ## Getting Started
 
 1. **Clone the repository:**
