@@ -130,7 +130,7 @@ export default function RootLayout({
               publisher: {
                 "@type": "Person",
                 name: "Usmael Abdurhaman",
-                url: "https://github.com/usmael"
+                url: "https://github.com/Usmaelabdureman"
               }
             })
           }}
@@ -143,8 +143,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Usmael Abdurhaman",
-              url: "https://github.com/usmael",
-              sameAs: ["https://github.com/usmael", "https://twitter.com/usmael"]
+              url: "https://github.com/Usmaelabdureman",
+              sameAs: ["https://github.com/Usmaelabdureman", "https://x.com/esmiz_o"]
             })
           }}
         />
