@@ -68,7 +68,6 @@ export default function RootLayout({
 }) {
   // Amharic is LTR, so always use ltr for direction
   const dir = "ltr"
-  const siteUrl = "https://ethiopian-calendar-converter.vercel.app" 
   return (
     <html lang={lang} dir="ltr">
       <head>
@@ -98,12 +97,12 @@ export default function RootLayout({
         <meta property="og:url" content={siteUrl} />
         <meta property="og:site_name" content="Ethiopian Calendar Converter" />
         <meta property="og:locale" content={lang === "am" ? "am_ET" : "en_US"} />
-        <meta property="og:image" content={`${siteUrl}/og-image.svg`} />
-        <meta property="og:image:alt" content="Ethiopian Calendar Converter preview" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+  <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+  <meta property="og:image:alt" content="Ethiopian Calendar Converter preview" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-        {/* Twitter Card */}
+  {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@usmael" />
         <meta name="twitter:creator" content="@usmael" />
@@ -113,10 +112,18 @@ export default function RootLayout({
         } />
         <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
 
-        {/* Fallback favicon - user can replace with their icon */}
-        <link rel="icon" href="/favicon.ico" />
+    {/* Fallback favicon - user can replace with their icon */}
+    {/* Favicons and manifest */}
+    <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/placeholder-logo.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#2d89ef" />
+  <meta name="theme-color" content="#ffffff" />
 
-        {/* Structured data (JSON-LD) for Website and Author */}
+  {/* Structured data (JSON-LD) for Website and Author */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
